@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+ !
+ !
+ !
+ !
+ !
+ !
+ₘₙⁿ
+▏n
+█▏　､⺍
+█▏ ⺰ʷʷｨ
+█◣▄██◣
+◥██████▋
+　◥████ █▎
+　　███▉ █▎
+　◢████◣⌠ₘ℩
+　　██◥█◣\≫
+　　██　◥█◣
+　　█▉　　█▊
+　　█▊　　█▊
+　　█▊　　█▋
+　　 █▏　　█▙
+　　 █
+止まるんじゃねぇぞ…
+
+-->
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="author" content="看客之眼">
+	<meta name="description" content="今天你写作了吗">
+
+    <title>今天你写作了吗</title>
+
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="header">
+    <a class="logo" href="/">今天你写作了吗</a>
+    <ul class="nav">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/inspiration">灵感</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                
+    <div class="work-box">
+	<div class="box-left"><div id="reflash">再来一批</div></div>
+	<div class="box-right">
+		<div class="work-title">新鲜灵感已到货</div>
+	</div>
+</div>
+<div class="ins-container">
+	<div class="sub-work-title">一句诗词？</div>
+	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+	<div id="poem_sentence"></div>
+	<div id="poem_info"></div>
+	<script type="text/javascript">
+		jinrishici.load(function (result) {
+			var sentence = document.querySelector("#poem_sentence")
+			var info = document.querySelector("#poem_info")
+			sentence.innerHTML = '「 ' + result.data.content.slice(0, -1) + ' 」'
+			info.innerHTML = '《' + result.data.origin.title + '》' + '--【' + result.data.origin.dynasty + '】' + result.data.origin.author
+		});
+	</script>
+</div>
+<div class="ins-container">
+	<div class="sub-work-title">一点真实？</div>
+	<div id="turth"></div>
+</div>
+<div class="ins-container">
+	<div class="sub-work-title">一曲热评？</div>
+	<div>
+		<div id="music-info"></div>
+		<div id="music-comment"></div>
+		<div id="comment-by"></div>
+	</div>
+</div>
+<div class="ins-container">
+	<div class="sub-work-title">一段历史？</div>
+	<nav id="history"></nav>
+</div>
+
+<script src="/js/getting.js"></script>
+
+<div class="ins-container">
+	<div class="sub-work-title">一处风景？</div>
+	<img class="img-box" src="https://imgapi.cn/api.php?fl=fengjing&gs=images">
+</div>
+<div class="ins-container">
+	<div class="sub-work-title">一眼倾城？</div>
+	<img class="img-box" src="https://imgapi.cn/api.php?fl=meizi&gs=images">
+</div>
+<div class="ins-container">
+	<div class="sub-work-title">一个次元？</div>
+	<img class="img-box" src="https://imgapi.cn/api.php?fl=dongman&gs=images">
+</div>
+
+                <div class="footer">
+    <span>Copyright &copy; 2021-
+        <script>
+            document.write((new Date).getFullYear());</script>
+        看客之眼
+    </span>
+    <span>Theme Modify From <a target="_blank" href="https://zheli.design/one-paper">one-paper/這李設計</a></span>
+    <span>sever by <a target="_blank" href="https://host.retiehe.com/">热铁盒</a> | power by <a target="_blank"
+            href="https://hexo.io/">Hexo</a></span>
+</div>
+
+
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+    
+<script src="/js/highlight.min.js"></script>
+
+        
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+            <script>
+                hljs.initHighlightingOnLoad();
+                hljs.initLineNumbersOnLoad();
+            </script>
+            </div>
+        </div>
+    </body>
+</html>
