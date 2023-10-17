@@ -63,7 +63,7 @@ a {
 }
 
 .logo {
-    font-family: 'deyi';
+    font-family: 'Smiley Sans Oblique';
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--font-color-1);
@@ -356,7 +356,7 @@ a {
 
 .post-title {
     display: inline-block;
-    font-family: 'deyi';
+    font-family: 'Smiley Sans Oblique';
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.5;
@@ -491,7 +491,7 @@ a {
 .post-main-title {
     flex: 0 0 100%;
     margin-bottom: 12px;
-    font-family: 'deyi';
+    font-family: 'Smiley Sans Oblique';
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.5;
