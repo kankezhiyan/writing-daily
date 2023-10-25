@@ -29,16 +29,20 @@
     <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="author" content="看客之眼">
-	<meta name="description" content="今天写作了吗">
+    <meta name="description" content="今天写作了吗">
 
-    <title>今天写作了吗</title>
+    <title>
+        今天写作了吗
+    </title>
 
     <link rel="alternate icon" type="image/png" href="/img/web-icon.ico">
-    <link rel='stylesheet' href='https://192960944.r.cdn36.com/chinesefonts2/packages/dyh/dist/SmileySans-Oblique/result.css' /> 
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.6.0/style.min.css" />
-    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
     
 <link rel="stylesheet" href="/css/fonts.css">
 
@@ -80,50 +84,52 @@
 		<div class="work-title">新鲜灵感已到货</div>
 	</div>
 </div>
-<div class="ins-container">
-	<div class="sub-work-title">一句诗词？</div>
-	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-	<div id="poem_sentence"></div>
-	<div id="poem_info"></div>
-	<script type="text/javascript">
-		jinrishici.load(function (result) {
-			var sentence = document.querySelector("#poem_sentence")
-			var info = document.querySelector("#poem_info")
-			sentence.innerHTML = '「 ' + result.data.content.slice(0, -1) + ' 」'
-			info.innerHTML = '《' + result.data.origin.title + '》' + '--【' + result.data.origin.dynasty + '】' + result.data.origin.author
-		});
-	</script>
-</div>
-<div class="ins-container">
-	<div class="sub-work-title">一点真实？</div>
-	<div id="turth"></div>
-</div>
-<div class="ins-container">
-	<div class="sub-work-title">一曲热评？</div>
-	<div>
-		<div id="music-info"></div>
-		<div id="music-comment"></div>
-		<div id="comment-by"></div>
+<div>
+	<div class="ins-container">
+		<div class="sub-work-title">一句诗词？</div>
+		<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+		<div id="poem_sentence"></div>
+		<div id="poem_info"></div>
+		<script type="text/javascript">
+			jinrishici.load(function (result) {
+				var sentence = document.querySelector("#poem_sentence")
+				var info = document.querySelector("#poem_info")
+				sentence.innerHTML = '「 ' + result.data.content.slice(0, -1) + ' 」'
+				info.innerHTML = '《' + result.data.origin.title + '》' + '--【' + result.data.origin.dynasty + '】' + result.data.origin.author
+			});
+		</script>
 	</div>
-</div>
-<div class="ins-container">
-	<div class="sub-work-title">一段历史？</div>
-	<nav id="history"></nav>
-</div>
-
+	<div class="ins-container">
+		<div class="sub-work-title">一点真实？</div>
+		<div id="turth">「免费的东西总是可能会靠不住的，就像我现在无法收到新句子」</div>
+	</div>
+	<div class="ins-container">
+		<div class="sub-work-title">一曲热评？</div>
+		<div>
+			<div id="music-info"></div>
+			<div id="music-comment"></div>
+			<div id="comment-by"></div>
+		</div>
+	</div>
+	<div class="ins-container">
+		<div class="sub-work-title">一段历史？</div>
+		<nav id="history"></nav>
+	</div>
+	
 <script src="/js/getting.js"></script>
 
-<div class="ins-container">
-	<div class="sub-work-title">一处风景？</div>
-	<img class="img-box" src="https://imgapi.cn/api.php?fl=fengjing&gs=images">
-</div>
-<div class="ins-container">
-	<div class="sub-work-title">一眼倾城？</div>
-	<img class="img-box" src="https://imgapi.cn/api.php?fl=meizi&gs=images">
-</div>
-<div class="ins-container">
-	<div class="sub-work-title">一个次元？</div>
-	<img class="img-box" src="https://imgapi.cn/api.php?fl=dongman&gs=images">
+		<div class="ins-container">
+			<div class="sub-work-title">一处风景？</div>
+			<img class="img-box" src="https://imgapi.cn/api.php?fl=fengjing&gs=images">
+		</div>
+		<div class="ins-container">
+			<div class="sub-work-title">一眼倾城？</div>
+			<img class="img-box" src="https://imgapi.cn/api.php?fl=meizi&gs=images">
+		</div>
+		<div class="ins-container">
+			<div class="sub-work-title">一个次元？</div>
+			<img class="img-box" src="https://imgapi.cn/api.php?fl=dongman&gs=images">
+		</div>
 </div>
 
                 <div class="footer">
@@ -132,7 +138,7 @@
             document.write((new Date).getFullYear());</script>
         看客之眼
     </span>
-    <span>Theme Modify From <a target="_blank" href="https://zheli.design/one-paper">one-paper/這李設計</a></span>
+    <span>Modify From <a target="_blank" href="https://zheli.design/one-paper">one-paper/這李設計</a></span>
     <span>Sever By <a target="_blank" href="https://host.retiehe.com/">热铁盒</a> | Power By <a target="_blank"
             href="https://hexo.io/">Hexo</a></span>
 </div>
