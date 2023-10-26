@@ -42,7 +42,6 @@
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.6.0/style.min.css" />
     <link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.15.8/waline.css" />
     
 <link rel="stylesheet" href="/css/fonts.css">
 
@@ -111,31 +110,17 @@
             
         </div>
         
-            <div id="w-comment"></div>
-            <script type="module">
-                import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-            
-                init({
-
-                    el: '#w-comment',
-                    serverURL: 'https://writing-page-comment.vercel.app/',
-                    emoji: [
-                            '//unpkg.com/@waline/emojis@1.2.0/bilibili',
-                            '//unpkg.com/@waline/emojis@1.2.0/bmoji',
-                            '//unpkg.com/@waline/emojis@1.2.0/alus',
-                            ],
-                    search: false,
-                    reaction: [
-                                'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_give_love.png',
-                                'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_call.png',
-                                'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_not_open.png',
-                                'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_emm.png',
-                                'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_um_2.png',
-                                'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_hmm.png',
-                                'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_wail.png',
-                            ],
-                });
-              </script>
+            <div id="t-comment"></div>
+            <script src="https://cdn.staticfile.org/twikoo/1.6.22/twikoo.all.min.js"></script>
+            <script>
+                twikoo.init({
+                envId: 'writing-comment-3gb6yl4583e938c0', 
+                el: '#t-comment', 
+                region: 'ap-shanghai', 
+                // path: location.pathname, 
+                // lang: 'zh-CN', 
+                })
+            </script>
         
 
     
